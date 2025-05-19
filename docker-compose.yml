@@ -13,7 +13,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.sub.rule=Host(`sub.edusnapec.online`)"
       - "traefik.http.routers.sub.entrypoints=http"
-      - "traefik.http.routers.sub.middlewares=https-redirect"
+      - "traefik.http.routers.sub.middlewares=redirect-to-https"
       - "traefik.http.routers.sub-secure.rule=Host(`sub.edusnapec.online`)"
       - "traefik.http.routers.sub-secure.entrypoints=https"
       - "traefik.http.routers.sub-secure.tls=true"
